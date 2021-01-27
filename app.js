@@ -29,7 +29,7 @@ app.use('/estabelecimento', estabelecimentoRouter);
 app.use('/agendamento', agendamentoRouter);
 app.use('/login', loginRouter);
 
-console.log('Rodando')
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

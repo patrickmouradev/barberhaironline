@@ -1,9 +1,20 @@
 var express = require('express');
 var router = express.Router();
+var UserController = require('../controllers/userController')
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/', UserController.findAll);
+
+
+/* GET users listing. */
+router.get('/testeDB', function(req, res, next) {
+  
 });
+
+  /*Rota*/
+  router.get('/cadastroUsers',UserController.cadastro);
+
+
+
 
 module.exports = router;

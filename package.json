@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "cross-env NODE_ENV=prd nodemon ./bin/www",
+    "dev" : "cross-env NODE_ENV=dev nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "cross-env": "^7.0.3",
     "debug": "~2.6.9",
     "ejs": "^2.6.2",
     "express": "^4.16.4",

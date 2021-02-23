@@ -12,7 +12,9 @@ router.get('/testeDB', function(req, res, next) {
 });
 
   /*Rota*/
-  router.get('/cadastroUsers',UserController.cadastro);
+  router.get('/cadastroUsers',UserController.cadastro2);
+
+
 
 
 

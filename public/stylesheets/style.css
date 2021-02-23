@@ -15,3 +15,48 @@ a {
    display: inline-block;
 
  }
+
+ .cadastroSalao{
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30 30 30 30
+   
+ }
+
+
+ .fontLabel{
+  font-family: Kristen ITC, Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+  
+ }
+
+ .fontLabelTable{
+  font-family: Kristen ITC, Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+  text-align:center; 
+  align-content: center; 
+  width: 100%; 
+  color: #a56e00;
+ }
+ .table tr:last-child td:last-child{
+  border-bottom-right-radius: 20px;
+}
+
+.table tr:last-child td:first-child{
+  border-bottom-left-radius: 20px;
+}
+
+ .cadastroSalaoDiv{
+   margin-left: 10px;
+ }
+
+ form{
+  border-radius: 25px
+ }
+  footer {
+    height: 100px;
+  }
+  
+

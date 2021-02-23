@@ -1,0 +1,175 @@
+<%- include('./template/cabecalho'); %> 
+
+<main class="container-fluid">
+
+    <section class="mt-1 cadastroSalao" id= "cadastroSalaro">
+        <form action="/cadastroSalao/save" method="post" style="background-color:lightgray;  ">
+        
+            <div class="row mb-3 cadastroSalaoDiv" style="padding-top: 20px;">
+                <label for="inputNome" class="col-sm-1 col-form-label fontLabel">Nome</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputNome">
+                </div>
+              </div>        
+              <div class="row mb-3 cadastroSalaoDiv">
+                <label for="inputCpfCnpj" class="col-sm-1 col-form-label fontLabel">CPFF/CNPJ</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputCpfCnpj">
+                </div>
+              </div> 
+              <div class="row mb-3 cadastroSalaoDiv">
+                <label for="inputEndereco" class="col-sm-1 col-form-label fontLabel">Endereço</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputEndereco">
+                </div>
+              </div> 
+              <div class="row mb-3 cadastroSalaoDiv">
+                <label for="inputCidade" class="col-sm-1 col-form-label fontLabel">Cidade</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputCidade">
+                </div>
+              </div>
+              <div class="row mb-3 cadastroSalaoDiv">
+                <label for="inputEstado" class="col-sm-1 col-form-label fontLabel">Estado</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputEstado">
+                </div>
+              </div>
+              <div class="row mb-3 cadastroSalaoDiv">
+                <label for="inputCep" class="col-sm-1 col-form-label fontLabel">Cep</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputCep">
+                </div>
+              </div>
+              <div class="row mb-3 cadastroSalaoDiv">
+                <label for="inputEmail" class="col-sm-1 col-form-label fontLabel">Email</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputEmail">
+                </div>
+              </div>
+              <div class="row mb-3 cadastroSalaoDiv">
+                <label for="inputContato" class="col-sm-1 col-form-label fontLabel">Contato</label>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" id="inputContato">
+                </div>
+              </div>
+              <div class="row mb-3 cadastroSalaoDiv">
+                <label for="inputSenha" class="col-sm-1 col-form-label fontLabel">Senha</label>
+                <div class="col-sm-3">
+                  <input type="password" class="form-control" id="inputSenha">
+                </div>
+              </div>
+              <div class="row mb-3 cadastroSalaoDiv" style="padding-bottom: 20px;">
+                <label for="inputConfSenha" class="col-sm-1 col-form-label fontLabel">Confirmação</label>
+                <div class="col-md-3">
+                  <input type="password" class="form-control" id="inputConfSenha">
+                </div>
+              </div>
+            </div>
+            <div class="container-md" style="padding-bottom: 20px;">
+                    <label class="fontLabelTable" >Serviços Oferecidos</label>
+                
+                <table class="table table-hover " style="width: 100%;" >
+                    <tr >
+                      <th scope="col">#</th>
+                      <th scope="col">Nome Procedimento</th>
+                      <th scope="col">Valor</th>
+                      <th scope="col">Tempo Medio</th>
+                      <th scope="col">Ativo</th>
+                      <th scope="col" colspan="2">Açoes</th>
+                    </tr>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Corte Cabelo</td>
+                      <td>R$100,00</td>
+                      <td>01:00</td>
+                      <td>Sim</td>
+                      <td>
+                        <a href="">
+                          <i class="fas fa-edit"></i>
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <i class="fas fa-trash"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Barba</td>
+                      <td>R$50,00</td>
+                      <td>01:00</td>
+                      <td>Sim</td>
+                      <td>OIO</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Escova</td>
+                      <td>R$150,00</td>
+                      <td>01:00</td>
+                      <td>Sim</td>
+                      <td>OIO</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+            </div>
+            <div class="container-lg" style="padding-bottom: 20px;">
+                <label class="fontLabelTable" >Lista dos Ultimos Agendamentos</label>
+            
+            <table class="table table-hover " style="width: 100%;" >
+                <tr >
+                  <th scope="col">#</th>
+                  <th scope="col">Data</th>
+                  <th scope="col">Usuario</th>
+                  <th scope="col">Tel. Celular</th>
+                  <th scope="col">Procedimento Agendado</th>
+                  <th scope="col">Valor</th>
+                  <th scope="col">Efetivado</th>
+                </tr>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>10/02/2020</td>
+                  <td>Zé Fuinha</td>
+                  <td>11-91111-11111</td>
+                  <td>Corte</td>
+                  <td>R$100,00</td>
+                  <td>Sim</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>10/02/2020</td>
+                  <td>Zé Fuinha</td>
+                  <td>11-91111-11111</td>
+                  <td>Corte</td>
+                  <td>R$100,00</td>
+                  <td>Não</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>10/02/2020</td>
+                  <td>Zé Fuinha</td>
+                  <td>11-91111-11111</td>
+                  <td>Corte</td>
+                  <td>R$100,00</td>
+                  <td>Sim</td>
+                </tr>
+                
+              </tbody>
+            </table>
+        </div>
+        </form>
+    </section>
+
+</main>
+
+
+
+
+
+
+
+<%- include('./template/rodape'); %> 

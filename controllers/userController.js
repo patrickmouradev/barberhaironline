@@ -9,5 +9,9 @@ module.exports = {
 
     cadastro(req,res,next){
         res.render('cadastroUsuario.ejs')
+    },
+
+    cadastro2(req,res,next){
+        res.send(userServices.insertUsers)
     }
 }

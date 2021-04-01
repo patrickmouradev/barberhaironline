@@ -7,4 +7,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'BarberHairOnline' });
 });
 
+
+
 module.exports = router;

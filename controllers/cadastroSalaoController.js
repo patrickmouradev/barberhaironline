@@ -13,5 +13,6 @@ module.exports = {
 
     save(req,res,next){
         res.render('cadastroSalao.ejs')
-    }
+    },
+
 }

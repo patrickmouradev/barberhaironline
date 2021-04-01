@@ -1,9 +1,18 @@
 var express = require('express');
 var router = express.Router();
-var UserController = require('../controllers/userController')
+var cadastroUsuarioController = require('../controllers/cadastroUsuarioController')
 
-/* GET users listing. */
-router.get('/', UserController.findAll);
+
+/* GET home page. */
+router.get('/create',function(req,res,next){
+  res.render('cadastroUsuario.ejs');
+  
+});
+
+router.get('/login',function(req,res,next){
+  res.render('login.ejs');
+  
+});
 
 
 /* GET users listing. */
@@ -12,7 +21,7 @@ router.get('/testeDB', function(req, res, next) {
 });
 
   /*Rota*/
-  router.get('/cadastroUsers',UserController.cadastro2);
+  router.get('/cadastroUsers',cadastroUsuarioController.cadastro2);
 
 
 

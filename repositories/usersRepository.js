@@ -4,10 +4,6 @@ async function findAll(){
     const conn = await connection.connect();
     const [rows] = await conn.query('SELECT * FROM USER;');
     console.log(rows[0].TextRow)
-    let user = {
-        'id' : 'Teste'
-    }
-    console.log(user)
     return rows;
 }
 
